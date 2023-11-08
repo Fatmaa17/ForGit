@@ -13,13 +13,7 @@ jobs:
 
 
     steps:
-      - name: "FirstAction"
-        run: pwd
-    
-      - name: "PrintSMTH"
-        run: echo Fatem
-      
       - uses: actions/checkout@v3
+      - name: "Accessing Docker"
+        run: dcoker login --username ftatimo --password dckr_pat_BOm1uOyh-QKMqmba1MEdPce297M
 
-      - name: "PrintFiles Except with dot ones"
-        run: ls
