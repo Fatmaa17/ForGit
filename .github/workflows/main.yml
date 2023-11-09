@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Accessing Docker"
-        run: docker login --username ftatimo --password dckr_pat_BOm1uOyh-QKMqmba1MEdPce297M
+        run: docker login --username ${{secrets.DUSER}} --password ${{secrets.DPASS}}
 
