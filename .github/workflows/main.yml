@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Accessing Docker"
-        run: docker login --username ${{secrets.DUSER}} --password ${{secrets.DPASS}}
+        run: docker login --username ${{ secrets.DUSER }} --password ${{secrets.DPASS}}
 
       - name: "OUR FIRST DOCKERIMAGE HEREEE"
-        run: docker build -t ${{secrets.DUSER}}/second-try .
+        run: docker build -t ${{ secrets.DUSER }}/second-try .
 
       - name: "Pushing"
-        run: docker push ${{secrets.DUSER}}/second-try
+        run: docker push ${{ secrets.DUSER }}/second-try
