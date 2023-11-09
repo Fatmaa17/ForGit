@@ -17,4 +17,4 @@ jobs:
       - name: "Accessing Docker"
         run: docker login --username ${{ secrets.DUSER }} --password ${{ secrets.DPASS }}
       - name: "PRINTING A WELCOME MSG"
-        run: echo Hi it's me fatima
+        run: echo "Hi Hi ! It's me Fatima"
