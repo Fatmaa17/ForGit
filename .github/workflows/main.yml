@@ -18,4 +18,4 @@ jobs:
         run: docker login --username ${{ secrets.DUSER }} --password ${{ secrets.DPASS }}
 
       - name: Delete Docker Image
-        run: docker rmi ftatimo/fatmasimage
+        run: docker rmi ${{ secrets.DUSER }}/fatmasimage
