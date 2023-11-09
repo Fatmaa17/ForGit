@@ -18,7 +18,7 @@ jobs:
         run: docker login --username ${{ secrets.DUSER }} --password ${{ secrets.DPASS }}
 
       - name: "OUR FIRST DOCKERIMAGE HEREEE"
-        run: docker build -t ${{ secrets.DUSER }}/image .
+        run: docker build -t ${{ secrets.DUSER }}/fatmasImage .
 
       - name: "Pushing"
-        run: docker push ${{ secrets.DUSER }}/image
+        run: docker push ${{ secrets.DUSER }}/fatmasImage
